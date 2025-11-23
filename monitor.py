@@ -1,4 +1,3 @@
-# monitor.py
 # Monitora uma URL e envia mensagem para Telegram quando houver mudança
 import requests
 import time
@@ -6,8 +5,8 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-BOT_TOKEN = os.getenv("TG_BOT_TOKEN")
-CHAT_ID = os.getenv("TG_CHAT_ID")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 URL = os.getenv("URL_MONITORADA", "https://example.com")
 DELAY = int(os.getenv("CHECK_INTERVAL", "60"))
 
